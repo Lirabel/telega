@@ -17,7 +17,7 @@
                         <li class="current"><a href='index.php'>Главная</a></li>
                         <li><a href='register.php'>Регистрация</a></li>
                         <li><a href='news.php'>Новости</a></li>
-                        <li><a href='o-proekte.php'>О проекте</a></li>
+                        <li><a href='about.php'>О проекте</a></li>
 
                     </ul>
 
@@ -27,7 +27,7 @@
                                 <li class="current"><a href='index.php'>Главная</a></li>
                                 <li><a href='register.php'>Регистрация</a></li>
                                 <li><a href='news.php'>Новости</a></li>
-                                <li><a href='o-proekte.php'>О проекте</a></li>               
+                                <li><a href='about.php'>О проекте</a></li>               
                             </ul>
                         </li>
                     </ul>
