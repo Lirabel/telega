@@ -4,8 +4,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
         <title>W4W</title>
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
-
-
     </head>
 
     <body class="lan-ru">
@@ -43,13 +41,12 @@
                     <form action="" id="" method="post" accept-charset="utf-8">
                         <label>Номер телефона</label>
                         <div>
-                            <input class="input" value="+380" maxlength="13"/>
+                            <input class="input" placeholder="+380123456789" maxlength="13" type='text'/> 
                         </div>
                         <label>Пароль</label>
                         <div>
                             <input class="input"  type="password" maxlength="50"/>
                         </div>     
-
                         <button type="submit" class="button cta">Войти</button>
                         <div class="info">
                             <a href="register.php" title="Регистрация">Регистрация</a>
