@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php 
+session_start();
+$phone = $_SESSION['login_user'];
+?>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
@@ -14,10 +17,25 @@
                 <a href="" title="LOGOTIP"></a>
             </h1>
             <ul class="desktop">
-                <li><a href='index.php'>Главная</a></li>
-                <li><a href='register.php'>Регистрация</a></li>
+              <?php 
+                if (isset($_SESSION['login_user'])) { ?>
+                    <li><a> <?php 
+                    echo $phone;
+                        ?> </a></li>
+                    <li><a href='order_form.php'>Форма заказа</a></li><?php } 
+                else {?>
+                    <li><a href='index.php'>Главная</a></li>
+                    <li><a href='register.php'>Регистрация</a></li>
+                     
+                <?php  } ?>
                 <li class="current"><a href='news.php'>Новости</a></li>
-                <li><a href='o-proekte.php'>О проекте</a></li>
+                <li><a href='about.php'>О проекте</a>
+                </li>
+                
+            <?php 
+                if (isset($_SESSION['login_user'])) { ?>
+                <li><a href='logout.php'>Выход</a></li>
+                <?php } ?>
             </ul>
 
             <ul class="mobile-nav">
@@ -26,7 +44,7 @@
                         <li><a href='index.php'>Главная</a></li>
                         <li><a href='register.php'>Регистрация</a></li>
                         <li class="current"><a href='news.php'>Новости</a></li>
-                        <li><a href='o-proekte.php'>О проекте</a></li>               
+                        <li><a href='about.php'>О проекте</a></li>               
                     </ul>
                 </li>
             </ul>
