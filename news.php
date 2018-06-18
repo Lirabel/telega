@@ -29,6 +29,7 @@ $phone = $_SESSION['login_user'];
                      
                 <?php  } ?>
                 <li class="current"><a href='news.php'>Новости</a></li>
+<<<<<<< HEAD
                 <li><a href='about.php'>О проекте</a>
                 </li>
                 
@@ -36,6 +37,9 @@ $phone = $_SESSION['login_user'];
                 if (isset($_SESSION['login_user'])) { ?>
                 <li><a href='logout.php'>Выход</a></li>
                 <?php } ?>
+=======
+                <li><a href='about.php'>О проекте</a></li>
+>>>>>>> 6e72afe36482a090dd6ee0e9f59fdcafa8d90d51
             </ul>
 
             <ul class="mobile-nav">
