@@ -1,15 +1,7 @@
-/*
-Theme Name: Socialinis Taksi
-Theme URI: http://socialinistaksi.lt
-Description: Socialinis Taksi
-Version: 1.0
-Author: ambu novo
-Author URI: http://true-story.lt/
 
-*/
 
 body {
-	background: url(/img/texture.jpg) 0 0;
+	background: url(/img/1.jpg) 0 0;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 10px;
 	line-height: 1.3;
@@ -19,7 +11,7 @@ body {
 	margin: 0;
 } 
 
-html { height: 100%; background: none;}
+/*html { height: 100%; background: none;}*/
 
 .hidden {display:none;}
 
@@ -846,7 +838,6 @@ div.confirm strong {
 }
 .pac-selected {    background-color: #D5DDF3;}
 .pac-placeholder {    color: gray;}
-.pac-container:after {    content: url("http://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white2.png");}
 
 /* -----------------------------------------------------------------------------------
 / ORDERS & USERS LISTING
@@ -1793,27 +1784,19 @@ figure.box .buttons a.button:last-of-type {	float: right;}
 	-ms-filter: grayscale(100%); -o-filter: grayscale(100%);
 	filter: url(desaturate.svg#greyscale);
 	filter: gray;
-	background: url(/img/partners.jpg) 0 10px no-repeat;
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: 	all .2s ease-in-out;
 	transition: 		all .2s ease-in-out;
 }
 
-#footer a.infoera { width: 55px; background: url(/img/partners.jpg) -106px 10px no-repeat; }
-#footer a.osfl { width: 32px; background: url(/img/partners.jpg) -161px 10px no-repeat; }
-#footer a.submarinas { width: 64px; background: url(/img/partners.jpg) -195px 10px no-repeat; }
-#footer a.plaunu { width: 40px; background: url(/img/partners.jpg) -259px 10px no-repeat; }
-#footer a.tstory { width: 57px; background: url(/img/partners.jpg) -299px 10px no-repeat; }
-#footer a.nsii { width: 41px; background: url(/img/partners.jpg) -356px 10px no-repeat; }
-#footer a.lsbp { width: 108px; background: url(/img/partners.jpg) -407px 10px no-repeat; }
-#footer a.latlil { width: 69px; background: url(/img/partners.jpg) -515px 10px no-repeat; }
 
+/*
 BODY.lan-lv #footer li.osfl,
 BODY.lan-lv #footer li.lsbp,
 BODY.lan-lv #footer li.tstory {
 	display: none;
-}
+}*/
 
 BODY.lan-lv #footer a.nsii {
 	width: 137px;
