@@ -1,7 +1,8 @@
 
-
 body {
-	background: url(/img/1.jpg) 0 0;
+	background: url(/img/1.jpg) 0 0 no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 10px;
 	line-height: 1.3;
@@ -11,7 +12,7 @@ body {
 	margin: 0;
 } 
 
-/*html { height: 100%; background: none;}*/
+html { height: 100%; background: none;}
 
 .hidden {display:none;}
 
@@ -177,12 +178,6 @@ h3.nothing-found {
 	background: url(/img/nav-logo.png) 0 0 no-repeat;
 }
 
-BODY.lan-lv #header h1 a {
-	width: 97px;
-	background: url(/img/nav-logo-lv.png) 0 0 no-repeat;
-}
-
-
 /* section #header => nav #navigation */
 
 #navigation {
@@ -267,20 +262,6 @@ BODY.lan-lv #header h1 a {
 	color: #fff;
 }
 
-/* section #header => languages */
-
-#navigation ul li.languages {
-	border: none;
-	height: 48px;
-	padding: 27px 0 0 15px;
-	display: block;
-	float: left;
-}
-
-#navigation ul li.languages.user-lan {
-	border-right: solid 1px #e9e9e9;
-	padding-right: 15px;
-}
 
 #navigation .lan-select .current {
 	display: block;
@@ -291,9 +272,6 @@ BODY.lan-lv #header h1 a {
 	position: relative;
 }
 
-#navigation .lan-select .current.lt {	background: url(/img/flag-lt.png) 0 0 no-repeat;}
-#navigation .lan-select .current.ru {	background: url(/img/flag-ru.png) 0 0 no-repeat;}
-#navigation .lan-select .current.lv {	background: url(/img/flag-lv.png) 0 0 no-repeat;}
 
 #navigation .lan-select .current span {
 	text-align: center;
@@ -338,12 +316,6 @@ BODY.lan-lv #header h1 a {
 
 }
 
-#navigation .lan-select .select a:first-of-type {	border-top: solid 1px #e9e9e9;}
-#navigation .lan-select .select a.lt {	background: url(/img/flag-lt.png) 10px 50% no-repeat #fff;}
-#navigation .lan-select .select a.ru {	background: url(/img/flag-ru.png) 10px 50% no-repeat #fff;}
-#navigation .lan-select .select a.lv {	background: url(/img/flag-lv.png) 10px 50% no-repeat #fff;}
-#navigation .lan-select:hover .select {	display: block;}
-#navigation .lan-select .select a:hover {	background-color: #fbfbfb;}
 /* section #header => profile */
 
 #navigation ul li.profile {
@@ -368,25 +340,8 @@ BODY.lan-lv #header h1 a {
 	font-size: .8em;
 }
 
-/* section #header => donations */
 
-#navigation ul li.donations {
-	padding: 0 0 0 20px;
-	display: none;
-	float: left;
-	border: none;
-}
 
-#navigation ul li.donations a {
-	float: left;
-	background: url(/img/btn-aukok.png) 0 0 no-repeat;
-	width: 132px;
-	height: 55px;
-	margin: 10px 0 0 0;
-	padding: 0;
-}
-
-body.lan-lt #navigation ul li.donations {	display: block;}
 
 /* section #header => dropmedown & godmenu styles */
 
@@ -619,27 +574,6 @@ body.lan-lt #navigation ul li.donations {	display: block;}
 	color: #7d7d7d;
 }
 
-#content figure.partner {
-	width: 50%;
-	float: left;
-	margin: 0;
-	padding: 0 40px 0 170px;
-	min-height: 210px;
-	position: relative;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding;
-	background-clip: padding-box;
-}
-
-#content figure.partner img {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
 /* -----------------------------------------------------------------------------------
 / DECLINE & ACCEPT MESSAGES
 /-----------------------------------------------------------------------------------*/
@@ -838,6 +772,7 @@ div.confirm strong {
 }
 .pac-selected {    background-color: #D5DDF3;}
 .pac-placeholder {    color: gray;}
+.pac-container:after {    content: url("http://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white2.png");}
 
 /* -----------------------------------------------------------------------------------
 / ORDERS & USERS LISTING
@@ -1365,77 +1300,6 @@ div.confirm strong {
 	border: solid 1px #e9e9e9;
 }
 
-#content .tabs ul li.dropdown .sbHolder a.sbToggle {
-	display: block;
-	height: 38px;
-	width: 30px;
-	float: left;
-	background: url(../img/select-icons.png) 6px -5px no-repeat;
-	outline: none;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-#content .tabs ul li.dropdown .sbHolder a.sbSelector:hover {	background: #fff;}
-#content .tabs ul li.dropdown .sbHolder a.sbToggleOpen {	background: url(../img/select-icons.png) 6px -107px no-repeat;}
-#content .tabs .sbHolder ul {
-	display: block;
-	float: left;
-	margin: 0 0 0 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-#content .tabs .sbHolder ul li {
-	float: left;
-	clear: both;
-	width: 100%;
-	padding: 0;
-	border: none;
-	margin: 0;
-	background: #fff;
-	line-height: 1;
-}
-
-#content .tabs .sbHolder ul li a {
-	display: block;
-	float: left;
-	width: 100%;
-	height: auto;
-	margin: 0;
-	padding: 15px 10px;
-	line-height: normal;
-	border-bottom: solid 1px #e9e9e9;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding;
-	background-clip: padding-box;
-}
-
-#content .tabs .sbHolder ul li:last-of-type a {
-	border-bottom: none;
-}
-
-#content .tabs ul li.dropdown .sbOptions{
-    background-color: #fff;
-    border: 1px solid #e9e9e9;
-	border-bottom: none;
-	list-style: none;
-	left: -1px;
-	margin: 0;
-	padding: 0 0 1px 0;
-	position: absolute;
-	top: 0;
-	width: 200px;
-	z-index: 1;
-	overflow-y: auto;
-	-webkit-box-shadow: 0 1px 2px rgba(35,31,32,.15);
-	-moz-box-shadow: 0 1px 2px rgba(35,31,32,.15);
-	box-shadow: 0 1px 2px rgba(35,31,32,.15);
-}
 
 #content #map {
 	clear: both;
@@ -1784,19 +1648,12 @@ figure.box .buttons a.button:last-of-type {	float: right;}
 	-ms-filter: grayscale(100%); -o-filter: grayscale(100%);
 	filter: url(desaturate.svg#greyscale);
 	filter: gray;
-	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	/*background: url(/img/partners.jpg) 0 10px no-repeat;*/
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: 	all .2s ease-in-out;
 	transition: 		all .2s ease-in-out;
 }
 
-
-/*
-BODY.lan-lv #footer li.osfl,
-BODY.lan-lv #footer li.lsbp,
-BODY.lan-lv #footer li.tstory {
-	display: none;
-}*/
 
 BODY.lan-lv #footer a.nsii {
 	width: 137px;
